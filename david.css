@@ -1,0 +1,284 @@
+/*=Typography=*/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  padding-top: 1px;
+  z-index: 1;
+  margin: 0;
+  background: #FF5F6D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #FFC371, #FF5F6D);
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.sec-about p {
+  text-align: center;
+}
+.main-heading {
+  font-family: 'Open sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+}
+
+.container > h1 {
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+.hero-image{
+  margin: 0;
+  text-align: center;
+}
+.hero-image img{
+  width: 400px;
+  height: 100%;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.sec-about a {
+  text-decoration: underline;
+}
+.sec-services{
+  margin-right: 1%;
+}
+
+.sec-services h2,
+.sec-services p {
+  font-weight: 300;
+  text-align: center;
+}
+
+.sec-testimonials p {
+  font-style: italic;
+}
+
+.sec-contact .btn {
+  text-transform: uppercase;
+}
+
+.soc-media-ul a {
+  text-align: center;
+  text-decoration: none;
+}
+
+/*=Base=*/
+
+section {
+  padding: 5em 0;
+}
+form {
+  @media screen and (max-width: 768px) and (min-width: 485px) {
+    max-width: 70%;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+hr {
+  margin-bottom: 3em;
+  width: 7%;
+}
+
+/*=Layout=*/
+
+.sec-folio{
+  margin-right: 1%;
+}
+.sec-folio .row {
+  margin-bottom: 3em;
+}
+
+.sec-folio img {
+  max-width: 100%;
+}
+/*Main*/
+#folio .container{
+  width: 100%;
+}
+.row{
+  margin-left: 1%;
+}
+
+#folio .gallery{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.sec-main {
+  width: 100%;
+  position: relative;
+  height: 560px;
+  animation: pulse 2s infinite;
+  margin: 0 auto;
+  display: table;
+  margin-top: 50px;
+  animation-direction: alternate;
+}
+
+.main-heading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding: 0;
+  margin: auto;
+  height: 40px;
+  color: #000;
+}
+
+/*Services*/
+#services .serv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.serv .row{
+  border: black 1px solid;
+}
+.sec-services .fa-paint-brush {
+  width: 64px;
+}
+
+.sec-services .fa-code {
+  width: 68px
+}
+
+.sec-services h2 {
+  margin: 1em 0;
+}
+
+/*Testimonials*/
+/*Contact*/
+
+.sec-contact .form-control:focus {
+  border-color: #ad0000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(173, 0, 0, .6);
+}
+
+.sec-contact .btn {
+  padding: .5rem 1.75rem;
+  background: #000;
+  font-size: .95rem;
+  color: #fff;
+}
+.formular{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.formular input{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.formular textarea{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+#de{
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  display: none;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5em;
+}
+#de img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+#closeButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#eng{
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  display: none;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5em;
+}
+#eng img{
+  width: 100%;
+  height: 80%;
+}
+.pulse {
+  /*animation-delay: 2s;*/
+  animation: pulse 3s infinite;
+  margin: 0 auto;
+  display: table;
+  margin-top: 50px;
+  animation-direction: alternate;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+.english{
+  color: #fff;
+  text-decoration: underline;
+}
+.english:hover{
+  background: #FF5F6D;
+}
+.german{
+  color: #fff;
+  text-decoration: underline;
+}
+.german:hover{
+  background: #FF5F6D;
+}
+@media screen and (max-width: 770px){
+	#de{
+		width: 300px;
+		height: 100%;
+	}
+	#de img{
+		width: 95%;
+	}
+	#eng{
+		width: 300px;
+		height: 100%;
+	}
+	#eng img{
+		width: 95%;
+	}
+	.hero-image{
+		margin: 0 auto;
+		width: 40%;
+	}
+	.hero-image img{
+		width: 100%;
+		height: 100%;
+	}
+}

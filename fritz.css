@@ -1,0 +1,130 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin:  0;
+	font-family: 'Barlow', sans-serif;
+	background: #FF5F6D;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-attachment: fixed;
+}
+
+.container {
+	width: 90%;
+}
+
+
+@media screen and (min-width: 769px) {
+	.container {
+		display: flex;
+		max-width: 900px;
+	}
+}
+
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media screen and (max-width: 377px) {
+	#menubutton {
+		color:  black;
+	}
+}
+
+/* Portfolio Card Styles */
+
+.portfolio-card {
+	background:  white;
+	padding: 2em;
+	margin: 3em 0 0;
+	width: 90%;
+	box-shadow: 0 0 .5em rgba(0, 0, 0, .3);
+	border-radius: 5px;
+}
+
+.services {
+	display: flex;
+	flex-direction: column;
+}
+
+.services h1 {
+	margin: 0;
+}
+
+.about-me {
+	display: flex;
+	flex-direction: column;
+}
+
+.personal-photo {
+	width:  100%;
+	align-self: flex-start;
+}
+
+.portfolio-hello {
+	margin: 0;
+}
+
+@media screen and (min-width: 769px) {
+	.portfolio-card {
+		margin: 2em 0 0;
+		font-size: 1.2em;
+		display: flex;
+		max-width: 950px;
+	}
+	.personal-photo {
+	width:  50%;
+	}
+	.about-me {
+	padding-left: 2em;
+	}
+}
+
+
+.portfolio-name {
+	font-size: 3.5em;
+	margin: 0;
+}
+.portfolio-profession {
+    font-size: 1.3em;
+    margin: 0 0 .5em;
+}
+
+.portfolio-description {
+	color: gray;
+	margin-top: 0;
+}
+
+.portfolio-social-icons {
+	display: flex;
+	justify-content: space-evenly;
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: auto;
+}
+
+.portfolio-social-icons img {
+	transition: .1s;
+	width: 2em;
+}
+
+
+.portfolio-social-icons img:hover {
+	transition: .5s;
+	transform: scale(1.5);
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:  white;
+	background:  rgba(0, 0, 0, .3);
+	height: 500px;
+	margin-top: 2em;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Barlow:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="nav.css">
+	<link rel="stylesheet" href="fritz.css">
+</head>
+<body id="body">
+<span id="menubutton">Menu</span>
+		<nav id="mainnav" class="nav">
+			<h1 class="logo">TEAM5</h1>
+			<ul>
+				<li><a href="team.html" title="">Home</a></li>
+				<li><a href="blog.html" title="">Blog</a></li>
+				<li class="dropdown">
+					<a href="#" title="" onclick="dropdown()">Team</a>
+					<div id="dropdown-content" class="dropdown-list">
+						<a href="david.html">David</a>
+						<a href="zolfi.html">Zolfi</a>
+						<a href="fritz.html">Fritz</a>
+					</div>
+				</li>
+
+			</ul>
+		</nav>
+		<main>
+			<div class="portfolio-card container">
+				<img src="fritzimg/placeholder-avatar.png" class="personal-photo" alt="">
+				<section class="about-me">
+					<p class="portfolio-hello">Hi, I am</p>
+					<h2 class="portfolio-name">Fritz</h2>
+					<h3 class="portfolio-profession">Front End Developer</h3>
+					<p class="portfolio-description">I'm a front end developer and graphic designer specialising in animated banner ads. Utilising mostly proprietary animation platforms in the past, I more and more try to cut the cord and use more free and open source software. Among my favorite applications for image manipulation and skalable vector graphics are Gimp and Inkscape.</p>
+					<ul class="portfolio-social-icons">
+						<li><img src="fritzimg/facebook.svg" class="svgfacebook" alt=""></li>
+						<li><img src="fritzimg/twitter.svg" class="svgtwitter" alt=""></li>
+						<li><img src="fritzimg/instagram.svg" class="svginstagram" alt=""></li>
+					</ul>
+				</section>
+				
+			</div>
+
+			<div class="portfolio-card services container">
+				<h1>Services:</h1>
+				<ul class="service-list">
+					<li>Webdesign</li>
+					<li>Webdevelopment</li>
+					<li>Static Banners</li>
+					<li>HTML5 Banners</li>
+					<li>SVG Animations</li>
+				</ul>
+			</div>
+		</main>
+		<footer>
+			<h1>The Beautiful footer: Enjoy!</h1>
+		</footer>
+
+
+		<script>
+			document.getElementById('menubutton').addEventListener('click', function() {
+				var nav = document.getElementById("mainnav");
+				var style = window.getComputedStyle(nav); // to get the style from the stylesheet
+
+				nav.classList.toggle('expand');
+			});
+
+			function dropdown(){
+				var dropdownContent = document.getElementById("dropdown-content");
+				dropdownContent.classList.toggle('flexdropdown');
+			}
+		</script>
+		<script src="colors.js"></script>
+
+	
+</body>
+</html>
